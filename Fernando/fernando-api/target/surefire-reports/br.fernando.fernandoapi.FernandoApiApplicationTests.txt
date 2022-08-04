@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: br.fernando.fernandoapi.FernandoApiApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.231 s - in br.fernando.fernandoapi.FernandoApiApplicationTests

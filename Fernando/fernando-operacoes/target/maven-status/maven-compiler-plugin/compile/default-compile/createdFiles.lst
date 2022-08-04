@@ -1,0 +1,9 @@
+br/fernando/fernandooperacoes/queue/listener/AutorListener.class
+br/fernando/fernandooperacoes/service/AutorService.class
+br/fernando/fernandooperacoes/mapper/AutorTransformMapperImpl.class
+br/fernando/fernandooperacoes/config/AmqpConfiguration.class
+br/fernando/fernandooperacoes/domain/Autor.class
+br/fernando/fernandooperacoes/mapper/AutorTransformMapper.class
+br/fernando/fernandooperacoes/repository/AutorRepository.class
+br/fernando/fernandooperacoes/queue/listener/AutorListener$1.class
+br/fernando/fernandooperacoes/FernandoOperacoesApplication.class

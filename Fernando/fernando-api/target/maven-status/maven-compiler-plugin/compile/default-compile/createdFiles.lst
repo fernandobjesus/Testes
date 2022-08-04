@@ -1,0 +1,5 @@
+br/fernando/fernandoapi/config/AmqpConfiguration.class
+br/fernando/fernandoapi/config/SwaggerConfiguration.class
+br/fernando/fernandoapi/FernandoApiApplication.class
+br/fernando/fernandoapi/sender/AutorSender.class
+br/fernando/fernandoapi/controller/AutorController.class

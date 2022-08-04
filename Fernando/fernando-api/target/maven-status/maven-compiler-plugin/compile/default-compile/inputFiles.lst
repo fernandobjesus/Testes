@@ -1,0 +1,5 @@
+/home/fernando/sdk/workspace/fbj-estudo/Testes.git/Fernando/fernando-api/src/main/java/br/fernando/fernandoapi/FernandoApiApplication.java
+/home/fernando/sdk/workspace/fbj-estudo/Testes.git/Fernando/fernando-api/src/main/java/br/fernando/fernandoapi/sender/AutorSender.java
+/home/fernando/sdk/workspace/fbj-estudo/Testes.git/Fernando/fernando-api/src/main/java/br/fernando/fernandoapi/controller/AutorController.java
+/home/fernando/sdk/workspace/fbj-estudo/Testes.git/Fernando/fernando-api/src/main/java/br/fernando/fernandoapi/config/SwaggerConfiguration.java
+/home/fernando/sdk/workspace/fbj-estudo/Testes.git/Fernando/fernando-api/src/main/java/br/fernando/fernandoapi/config/AmqpConfiguration.java
