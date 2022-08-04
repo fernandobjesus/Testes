@@ -17,13 +17,13 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @Configuration
 @EnableSwagger2
 public class SwaggerConfiguration extends WebMvcConfigurationSupport {
-	
+
 	@Bean
 	public Docket publicMethods() {
 		return new Docket(DocumentationType.SWAGGER_2)
 			.groupName("Métodos Publicos")
 			.select()
-				.apis(RequestHandlerSelectors.basePackage("com.api.fbj.controller"))
+				.apis(RequestHandlerSelectors.basePackage("br.fernando.fernandoapi.controller"))
 				.paths(PathSelectors.ant("/v1/public/**")).build()
 				.apiInfo(metaData());
 	}
@@ -48,4 +48,5 @@ public class SwaggerConfiguration extends WebMvcConfigurationSupport {
 		registry.addResourceHandler("/webjars/**")
 		.addResourceLocations("classpath:/META-INF/resources/webjars/");
 	}
+
 }
