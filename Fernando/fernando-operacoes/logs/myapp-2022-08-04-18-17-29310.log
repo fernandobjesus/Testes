@@ -1,0 +1,334 @@
+18:17:29.332 [background-preinit] INFO  org.hibernate.validator.internal.util.Version | HV000001: Hibernate Validator 6.2.3.Final
+18:17:29.379 [restartedMain] INFO  br.fernando.fernandooperacoes.FernandoOperacoesApplication | Starting FernandoOperacoesApplication using Java 1.8.0_332 on fernando-Vostro-3400 with PID 221498 (/home/fernando/sdk/workspace/fbj-estudo/Testes.git/Fernando/fernando-operacoes/target/classes started by fernando in /home/fernando/sdk/workspace/fbj-estudo/Testes.git/Fernando/fernando-operacoes)
+18:17:29.381 [restartedMain] INFO  br.fernando.fernandooperacoes.FernandoOperacoesApplication | No active profile set, falling back to 1 default profile: "default"
+18:17:29.408 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor | Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+18:17:29.408 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor | For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+18:17:29.790 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate | Multiple Spring Data modules found, entering strict repository configuration mode
+18:17:29.791 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate | Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+18:17:29.809 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport | Spring Data JDBC - Could not safely identify store assignment for repository candidate interface br.fernando.fernandooperacoes.repository.AutorRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+18:17:29.809 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate | Finished Spring Data repository scanning in 14 ms. Found 0 JDBC repository interfaces.
+18:17:29.817 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate | Multiple Spring Data modules found, entering strict repository configuration mode
+18:17:29.818 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate | Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+18:17:29.838 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate | Finished Spring Data repository scanning in 15 ms. Found 1 JPA repository interfaces.
+18:17:30.225 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer | Tomcat initialized with port(s): 8081 (http)
+18:17:30.239 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol | Initializing ProtocolHandler ["http-nio-8081"]
+18:17:30.239 [restartedMain] INFO  org.apache.catalina.core.StandardService | Starting service [Tomcat]
+18:17:30.239 [restartedMain] INFO  org.apache.catalina.core.StandardEngine | Starting Servlet engine: [Apache Tomcat/9.0.65]
+18:17:30.274 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] | Initializing Spring embedded WebApplicationContext
+18:17:30.275 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext | Root WebApplicationContext: initialization completed in 866 ms
+18:17:30.367 [restartedMain] INFO  org.hibernate.jpa.internal.util.LogHelper | HHH000204: Processing PersistenceUnitInfo [name: default]
+18:17:30.398 [restartedMain] INFO  org.hibernate.Version | HHH000412: Hibernate ORM core version 5.6.10.Final
+18:17:30.492 [restartedMain] INFO  org.hibernate.annotations.common.Version | HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+18:17:30.557 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource | HikariPool-1 - Starting...
+18:17:30.659 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource | HikariPool-1 - Start completed.
+18:17:30.685 [restartedMain] INFO  org.hibernate.dialect.Dialect | HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+18:17:31.066 [restartedMain] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator | HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+18:17:31.072 [restartedMain] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean | Initialized JPA EntityManagerFactory for persistence unit 'default'
+18:17:31.453 [restartedMain] WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration | spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+18:17:31.733 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer | LiveReload server is running on port 35729
+18:17:31.796 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol | Starting ProtocolHandler ["http-nio-8081"]
+18:17:31.805 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer | Tomcat started on port(s): 8081 (http) with context path ''
+18:17:31.807 [restartedMain] INFO  org.springframework.amqp.rabbit.connection.CachingConnectionFactory | Attempting to connect to: localhost:5672
+18:17:31.843 [restartedMain] INFO  org.springframework.amqp.rabbit.connection.CachingConnectionFactory | Created new connection: jmsConnectionFactory#56ed0c35:0/SimpleConnection@46f31252 [delegate=amqp://guest@127.0.0.1:5672/, localPort= 38182]
+18:17:31.869 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] WARN  org.springframework.amqp.rabbit.listener.BlockingQueueConsumer | Failed to declare queue: {$thanos.fila.autor.queue}
+18:17:31.869 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] WARN  org.springframework.amqp.rabbit.listener.BlockingQueueConsumer | Queue declaration failed; retries left=3
+org.springframework.amqp.rabbit.listener.BlockingQueueConsumer$DeclarationException: Failed to declare queue(s):[{$thanos.fila.autor.queue}]
+	at org.springframework.amqp.rabbit.listener.BlockingQueueConsumer.attemptPassiveDeclarations(BlockingQueueConsumer.java:760) ~[spring-rabbit-2.4.6.jar:2.4.6]
+	at org.springframework.amqp.rabbit.listener.BlockingQueueConsumer.passiveDeclarations(BlockingQueueConsumer.java:637) ~[spring-rabbit-2.4.6.jar:2.4.6]
+	at org.springframework.amqp.rabbit.listener.BlockingQueueConsumer.start(BlockingQueueConsumer.java:624) ~[spring-rabbit-2.4.6.jar:2.4.6]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.initialize(SimpleMessageListenerContainer.java:1376) ~[spring-rabbit-2.4.6.jar:2.4.6]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.run(SimpleMessageListenerContainer.java:1221) ~[spring-rabbit-2.4.6.jar:2.4.6]
+	at java.lang.Thread.run(Thread.java:750) ~[?:1.8.0_332]
+Caused by: java.io.IOException
+	at com.rabbitmq.client.impl.AMQChannel.wrap(AMQChannel.java:129) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.client.impl.AMQChannel.wrap(AMQChannel.java:125) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.client.impl.AMQChannel.exnWrappingRpc(AMQChannel.java:147) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.client.impl.ChannelN.queueDeclarePassive(ChannelN.java:1012) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.client.impl.ChannelN.queueDeclarePassive(ChannelN.java:46) ~[amqp-client-5.14.2.jar:5.14.2]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_332]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_332]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_332]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_332]
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory$CachedChannelInvocationHandler.invoke(CachingConnectionFactory.java:1162) ~[spring-rabbit-2.4.6.jar:2.4.6]
+	at com.sun.proxy.$Proxy132.queueDeclarePassive(Unknown Source) ~[?:?]
+	at org.springframework.amqp.rabbit.listener.BlockingQueueConsumer.attemptPassiveDeclarations(BlockingQueueConsumer.java:738) ~[spring-rabbit-2.4.6.jar:2.4.6]
+	... 5 more
+Caused by: com.rabbitmq.client.ShutdownSignalException: channel error; protocol method: #method<channel.close>(reply-code=404, reply-text=NOT_FOUND - no queue '{$thanos.fila.autor.queue}' in vhost '/', class-id=50, method-id=10)
+	at com.rabbitmq.utility.ValueOrException.getValue(ValueOrException.java:66) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.utility.BlockingValueOrException.uninterruptibleGetValue(BlockingValueOrException.java:36) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.client.impl.AMQChannel$BlockingRpcContinuation.getReply(AMQChannel.java:502) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.client.impl.AMQChannel.privateRpc(AMQChannel.java:293) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.client.impl.AMQChannel.exnWrappingRpc(AMQChannel.java:141) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.client.impl.ChannelN.queueDeclarePassive(ChannelN.java:1012) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.client.impl.ChannelN.queueDeclarePassive(ChannelN.java:46) ~[amqp-client-5.14.2.jar:5.14.2]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_332]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_332]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_332]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_332]
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory$CachedChannelInvocationHandler.invoke(CachingConnectionFactory.java:1162) ~[spring-rabbit-2.4.6.jar:2.4.6]
+	at com.sun.proxy.$Proxy132.queueDeclarePassive(Unknown Source) ~[?:?]
+	at org.springframework.amqp.rabbit.listener.BlockingQueueConsumer.attemptPassiveDeclarations(BlockingQueueConsumer.java:738) ~[spring-rabbit-2.4.6.jar:2.4.6]
+	... 5 more
+Caused by: com.rabbitmq.client.ShutdownSignalException: channel error; protocol method: #method<channel.close>(reply-code=404, reply-text=NOT_FOUND - no queue '{$thanos.fila.autor.queue}' in vhost '/', class-id=50, method-id=10)
+	at com.rabbitmq.client.impl.ChannelN.asyncShutdown(ChannelN.java:517) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.client.impl.ChannelN.processAsync(ChannelN.java:341) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.client.impl.AMQChannel.handleCompleteInboundCommand(AMQChannel.java:182) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.client.impl.AMQChannel.handleFrame(AMQChannel.java:114) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.client.impl.AMQConnection.readFrame(AMQConnection.java:739) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.client.impl.AMQConnection.access$300(AMQConnection.java:47) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.client.impl.AMQConnection$MainLoop.run(AMQConnection.java:666) ~[amqp-client-5.14.2.jar:5.14.2]
+	... 1 more
+18:17:36.874 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] WARN  org.springframework.amqp.rabbit.listener.BlockingQueueConsumer | Failed to declare queue: {$thanos.fila.autor.queue}
+18:17:36.875 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] WARN  org.springframework.amqp.rabbit.listener.BlockingQueueConsumer | Queue declaration failed; retries left=2
+org.springframework.amqp.rabbit.listener.BlockingQueueConsumer$DeclarationException: Failed to declare queue(s):[{$thanos.fila.autor.queue}]
+	at org.springframework.amqp.rabbit.listener.BlockingQueueConsumer.attemptPassiveDeclarations(BlockingQueueConsumer.java:760) ~[spring-rabbit-2.4.6.jar:2.4.6]
+	at org.springframework.amqp.rabbit.listener.BlockingQueueConsumer.passiveDeclarations(BlockingQueueConsumer.java:637) ~[spring-rabbit-2.4.6.jar:2.4.6]
+	at org.springframework.amqp.rabbit.listener.BlockingQueueConsumer.start(BlockingQueueConsumer.java:624) ~[spring-rabbit-2.4.6.jar:2.4.6]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.initialize(SimpleMessageListenerContainer.java:1376) ~[spring-rabbit-2.4.6.jar:2.4.6]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.run(SimpleMessageListenerContainer.java:1221) ~[spring-rabbit-2.4.6.jar:2.4.6]
+	at java.lang.Thread.run(Thread.java:750) ~[?:1.8.0_332]
+Caused by: java.io.IOException
+	at com.rabbitmq.client.impl.AMQChannel.wrap(AMQChannel.java:129) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.client.impl.AMQChannel.wrap(AMQChannel.java:125) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.client.impl.AMQChannel.exnWrappingRpc(AMQChannel.java:147) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.client.impl.ChannelN.queueDeclarePassive(ChannelN.java:1012) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.client.impl.ChannelN.queueDeclarePassive(ChannelN.java:46) ~[amqp-client-5.14.2.jar:5.14.2]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_332]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_332]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_332]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_332]
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory$CachedChannelInvocationHandler.invoke(CachingConnectionFactory.java:1162) ~[spring-rabbit-2.4.6.jar:2.4.6]
+	at com.sun.proxy.$Proxy132.queueDeclarePassive(Unknown Source) ~[?:?]
+	at org.springframework.amqp.rabbit.listener.BlockingQueueConsumer.attemptPassiveDeclarations(BlockingQueueConsumer.java:738) ~[spring-rabbit-2.4.6.jar:2.4.6]
+	... 5 more
+Caused by: com.rabbitmq.client.ShutdownSignalException: channel error; protocol method: #method<channel.close>(reply-code=404, reply-text=NOT_FOUND - no queue '{$thanos.fila.autor.queue}' in vhost '/', class-id=50, method-id=10)
+	at com.rabbitmq.utility.ValueOrException.getValue(ValueOrException.java:66) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.utility.BlockingValueOrException.uninterruptibleGetValue(BlockingValueOrException.java:36) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.client.impl.AMQChannel$BlockingRpcContinuation.getReply(AMQChannel.java:502) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.client.impl.AMQChannel.privateRpc(AMQChannel.java:293) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.client.impl.AMQChannel.exnWrappingRpc(AMQChannel.java:141) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.client.impl.ChannelN.queueDeclarePassive(ChannelN.java:1012) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.client.impl.ChannelN.queueDeclarePassive(ChannelN.java:46) ~[amqp-client-5.14.2.jar:5.14.2]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_332]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_332]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_332]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_332]
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory$CachedChannelInvocationHandler.invoke(CachingConnectionFactory.java:1162) ~[spring-rabbit-2.4.6.jar:2.4.6]
+	at com.sun.proxy.$Proxy132.queueDeclarePassive(Unknown Source) ~[?:?]
+	at org.springframework.amqp.rabbit.listener.BlockingQueueConsumer.attemptPassiveDeclarations(BlockingQueueConsumer.java:738) ~[spring-rabbit-2.4.6.jar:2.4.6]
+	... 5 more
+Caused by: com.rabbitmq.client.ShutdownSignalException: channel error; protocol method: #method<channel.close>(reply-code=404, reply-text=NOT_FOUND - no queue '{$thanos.fila.autor.queue}' in vhost '/', class-id=50, method-id=10)
+	at com.rabbitmq.client.impl.ChannelN.asyncShutdown(ChannelN.java:517) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.client.impl.ChannelN.processAsync(ChannelN.java:341) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.client.impl.AMQChannel.handleCompleteInboundCommand(AMQChannel.java:182) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.client.impl.AMQChannel.handleFrame(AMQChannel.java:114) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.client.impl.AMQConnection.readFrame(AMQConnection.java:739) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.client.impl.AMQConnection.access$300(AMQConnection.java:47) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.client.impl.AMQConnection$MainLoop.run(AMQConnection.java:666) ~[amqp-client-5.14.2.jar:5.14.2]
+	... 1 more
+18:17:41.879 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] WARN  org.springframework.amqp.rabbit.listener.BlockingQueueConsumer | Failed to declare queue: {$thanos.fila.autor.queue}
+18:17:41.879 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] WARN  org.springframework.amqp.rabbit.listener.BlockingQueueConsumer | Queue declaration failed; retries left=1
+org.springframework.amqp.rabbit.listener.BlockingQueueConsumer$DeclarationException: Failed to declare queue(s):[{$thanos.fila.autor.queue}]
+	at org.springframework.amqp.rabbit.listener.BlockingQueueConsumer.attemptPassiveDeclarations(BlockingQueueConsumer.java:760) ~[spring-rabbit-2.4.6.jar:2.4.6]
+	at org.springframework.amqp.rabbit.listener.BlockingQueueConsumer.passiveDeclarations(BlockingQueueConsumer.java:637) ~[spring-rabbit-2.4.6.jar:2.4.6]
+	at org.springframework.amqp.rabbit.listener.BlockingQueueConsumer.start(BlockingQueueConsumer.java:624) ~[spring-rabbit-2.4.6.jar:2.4.6]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.initialize(SimpleMessageListenerContainer.java:1376) ~[spring-rabbit-2.4.6.jar:2.4.6]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.run(SimpleMessageListenerContainer.java:1221) ~[spring-rabbit-2.4.6.jar:2.4.6]
+	at java.lang.Thread.run(Thread.java:750) ~[?:1.8.0_332]
+Caused by: java.io.IOException
+	at com.rabbitmq.client.impl.AMQChannel.wrap(AMQChannel.java:129) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.client.impl.AMQChannel.wrap(AMQChannel.java:125) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.client.impl.AMQChannel.exnWrappingRpc(AMQChannel.java:147) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.client.impl.ChannelN.queueDeclarePassive(ChannelN.java:1012) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.client.impl.ChannelN.queueDeclarePassive(ChannelN.java:46) ~[amqp-client-5.14.2.jar:5.14.2]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_332]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_332]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_332]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_332]
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory$CachedChannelInvocationHandler.invoke(CachingConnectionFactory.java:1162) ~[spring-rabbit-2.4.6.jar:2.4.6]
+	at com.sun.proxy.$Proxy132.queueDeclarePassive(Unknown Source) ~[?:?]
+	at org.springframework.amqp.rabbit.listener.BlockingQueueConsumer.attemptPassiveDeclarations(BlockingQueueConsumer.java:738) ~[spring-rabbit-2.4.6.jar:2.4.6]
+	... 5 more
+Caused by: com.rabbitmq.client.ShutdownSignalException: channel error; protocol method: #method<channel.close>(reply-code=404, reply-text=NOT_FOUND - no queue '{$thanos.fila.autor.queue}' in vhost '/', class-id=50, method-id=10)
+	at com.rabbitmq.utility.ValueOrException.getValue(ValueOrException.java:66) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.utility.BlockingValueOrException.uninterruptibleGetValue(BlockingValueOrException.java:36) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.client.impl.AMQChannel$BlockingRpcContinuation.getReply(AMQChannel.java:502) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.client.impl.AMQChannel.privateRpc(AMQChannel.java:293) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.client.impl.AMQChannel.exnWrappingRpc(AMQChannel.java:141) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.client.impl.ChannelN.queueDeclarePassive(ChannelN.java:1012) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.client.impl.ChannelN.queueDeclarePassive(ChannelN.java:46) ~[amqp-client-5.14.2.jar:5.14.2]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_332]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_332]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_332]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_332]
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory$CachedChannelInvocationHandler.invoke(CachingConnectionFactory.java:1162) ~[spring-rabbit-2.4.6.jar:2.4.6]
+	at com.sun.proxy.$Proxy132.queueDeclarePassive(Unknown Source) ~[?:?]
+	at org.springframework.amqp.rabbit.listener.BlockingQueueConsumer.attemptPassiveDeclarations(BlockingQueueConsumer.java:738) ~[spring-rabbit-2.4.6.jar:2.4.6]
+	... 5 more
+Caused by: com.rabbitmq.client.ShutdownSignalException: channel error; protocol method: #method<channel.close>(reply-code=404, reply-text=NOT_FOUND - no queue '{$thanos.fila.autor.queue}' in vhost '/', class-id=50, method-id=10)
+	at com.rabbitmq.client.impl.ChannelN.asyncShutdown(ChannelN.java:517) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.client.impl.ChannelN.processAsync(ChannelN.java:341) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.client.impl.AMQChannel.handleCompleteInboundCommand(AMQChannel.java:182) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.client.impl.AMQChannel.handleFrame(AMQChannel.java:114) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.client.impl.AMQConnection.readFrame(AMQConnection.java:739) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.client.impl.AMQConnection.access$300(AMQConnection.java:47) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.client.impl.AMQConnection$MainLoop.run(AMQConnection.java:666) ~[amqp-client-5.14.2.jar:5.14.2]
+	... 1 more
+18:17:46.883 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] WARN  org.springframework.amqp.rabbit.listener.BlockingQueueConsumer | Failed to declare queue: {$thanos.fila.autor.queue}
+18:17:46.883 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] ERROR org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer | Consumer threw missing queues exception, fatal=true
+org.springframework.amqp.rabbit.listener.QueuesNotAvailableException: Cannot prepare queue for listener. Either the queue doesn't exist or the broker will not allow us to use it.
+	at org.springframework.amqp.rabbit.listener.BlockingQueueConsumer.handleDeclarationException(BlockingQueueConsumer.java:710) ~[spring-rabbit-2.4.6.jar:2.4.6]
+	at org.springframework.amqp.rabbit.listener.BlockingQueueConsumer.passiveDeclarations(BlockingQueueConsumer.java:644) ~[spring-rabbit-2.4.6.jar:2.4.6]
+	at org.springframework.amqp.rabbit.listener.BlockingQueueConsumer.start(BlockingQueueConsumer.java:624) ~[spring-rabbit-2.4.6.jar:2.4.6]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.initialize(SimpleMessageListenerContainer.java:1376) ~[spring-rabbit-2.4.6.jar:2.4.6]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.run(SimpleMessageListenerContainer.java:1221) ~[spring-rabbit-2.4.6.jar:2.4.6]
+	at java.lang.Thread.run(Thread.java:750) ~[?:1.8.0_332]
+Caused by: org.springframework.amqp.rabbit.listener.BlockingQueueConsumer$DeclarationException: Failed to declare queue(s):[{$thanos.fila.autor.queue}]
+	at org.springframework.amqp.rabbit.listener.BlockingQueueConsumer.attemptPassiveDeclarations(BlockingQueueConsumer.java:760) ~[spring-rabbit-2.4.6.jar:2.4.6]
+	at org.springframework.amqp.rabbit.listener.BlockingQueueConsumer.passiveDeclarations(BlockingQueueConsumer.java:637) ~[spring-rabbit-2.4.6.jar:2.4.6]
+	... 4 more
+Caused by: java.io.IOException
+	at com.rabbitmq.client.impl.AMQChannel.wrap(AMQChannel.java:129) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.client.impl.AMQChannel.wrap(AMQChannel.java:125) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.client.impl.AMQChannel.exnWrappingRpc(AMQChannel.java:147) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.client.impl.ChannelN.queueDeclarePassive(ChannelN.java:1012) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.client.impl.ChannelN.queueDeclarePassive(ChannelN.java:46) ~[amqp-client-5.14.2.jar:5.14.2]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_332]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_332]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_332]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_332]
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory$CachedChannelInvocationHandler.invoke(CachingConnectionFactory.java:1162) ~[spring-rabbit-2.4.6.jar:2.4.6]
+	at com.sun.proxy.$Proxy132.queueDeclarePassive(Unknown Source) ~[?:?]
+	at org.springframework.amqp.rabbit.listener.BlockingQueueConsumer.attemptPassiveDeclarations(BlockingQueueConsumer.java:738) ~[spring-rabbit-2.4.6.jar:2.4.6]
+	at org.springframework.amqp.rabbit.listener.BlockingQueueConsumer.passiveDeclarations(BlockingQueueConsumer.java:637) ~[spring-rabbit-2.4.6.jar:2.4.6]
+	... 4 more
+Caused by: com.rabbitmq.client.ShutdownSignalException: channel error; protocol method: #method<channel.close>(reply-code=404, reply-text=NOT_FOUND - no queue '{$thanos.fila.autor.queue}' in vhost '/', class-id=50, method-id=10)
+	at com.rabbitmq.utility.ValueOrException.getValue(ValueOrException.java:66) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.utility.BlockingValueOrException.uninterruptibleGetValue(BlockingValueOrException.java:36) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.client.impl.AMQChannel$BlockingRpcContinuation.getReply(AMQChannel.java:502) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.client.impl.AMQChannel.privateRpc(AMQChannel.java:293) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.client.impl.AMQChannel.exnWrappingRpc(AMQChannel.java:141) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.client.impl.ChannelN.queueDeclarePassive(ChannelN.java:1012) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.client.impl.ChannelN.queueDeclarePassive(ChannelN.java:46) ~[amqp-client-5.14.2.jar:5.14.2]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_332]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_332]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_332]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_332]
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory$CachedChannelInvocationHandler.invoke(CachingConnectionFactory.java:1162) ~[spring-rabbit-2.4.6.jar:2.4.6]
+	at com.sun.proxy.$Proxy132.queueDeclarePassive(Unknown Source) ~[?:?]
+	at org.springframework.amqp.rabbit.listener.BlockingQueueConsumer.attemptPassiveDeclarations(BlockingQueueConsumer.java:738) ~[spring-rabbit-2.4.6.jar:2.4.6]
+	at org.springframework.amqp.rabbit.listener.BlockingQueueConsumer.passiveDeclarations(BlockingQueueConsumer.java:637) ~[spring-rabbit-2.4.6.jar:2.4.6]
+	... 4 more
+Caused by: com.rabbitmq.client.ShutdownSignalException: channel error; protocol method: #method<channel.close>(reply-code=404, reply-text=NOT_FOUND - no queue '{$thanos.fila.autor.queue}' in vhost '/', class-id=50, method-id=10)
+	at com.rabbitmq.client.impl.ChannelN.asyncShutdown(ChannelN.java:517) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.client.impl.ChannelN.processAsync(ChannelN.java:341) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.client.impl.AMQChannel.handleCompleteInboundCommand(AMQChannel.java:182) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.client.impl.AMQChannel.handleFrame(AMQChannel.java:114) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.client.impl.AMQConnection.readFrame(AMQConnection.java:739) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.client.impl.AMQConnection.access$300(AMQConnection.java:47) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.client.impl.AMQConnection$MainLoop.run(AMQConnection.java:666) ~[amqp-client-5.14.2.jar:5.14.2]
+	... 1 more
+18:17:46.884 [restartedMain] WARN  org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext | Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'org.springframework.amqp.rabbit.config.internalRabbitListenerEndpointRegistry'; nested exception is org.springframework.amqp.AmqpIllegalStateException: Fatal exception on listener startup
+18:17:46.885 [restartedMain] INFO  org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer | Waiting for workers to finish.
+18:17:46.886 [restartedMain] INFO  org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer | Successfully waited for workers to finish.
+18:17:46.890 [restartedMain] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean | Closing JPA EntityManagerFactory for persistence unit 'default'
+18:17:46.892 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource | HikariPool-1 - Shutdown initiated...
+18:17:46.894 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource | HikariPool-1 - Shutdown completed.
+18:17:46.898 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol | Pausing ProtocolHandler ["http-nio-8081"]
+18:17:46.898 [restartedMain] INFO  org.apache.catalina.core.StandardService | Stopping service [Tomcat]
+18:17:46.901 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol | Stopping ProtocolHandler ["http-nio-8081"]
+18:17:46.902 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol | Destroying ProtocolHandler ["http-nio-8081"]
+18:17:46.908 [restartedMain] INFO  org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener | 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+18:17:46.921 [restartedMain] ERROR org.springframework.boot.SpringApplication | Application run failed
+org.springframework.context.ApplicationContextException: Failed to start bean 'org.springframework.amqp.rabbit.config.internalRabbitListenerEndpointRegistry'; nested exception is org.springframework.amqp.AmqpIllegalStateException: Fatal exception on listener startup
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:181) ~[spring-context-5.3.22.jar:5.3.22]
+	at org.springframework.context.support.DefaultLifecycleProcessor.access$200(DefaultLifecycleProcessor.java:54) ~[spring-context-5.3.22.jar:5.3.22]
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:356) ~[spring-context-5.3.22.jar:5.3.22]
+	at java.lang.Iterable.forEach(Iterable.java:75) ~[?:1.8.0_332]
+	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:155) ~[spring-context-5.3.22.jar:5.3.22]
+	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:123) ~[spring-context-5.3.22.jar:5.3.22]
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:935) ~[spring-context-5.3.22.jar:5.3.22]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:586) ~[spring-context-5.3.22.jar:5.3.22]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.2.jar:2.7.2]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) ~[spring-boot-2.7.2.jar:2.7.2]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) ~[spring-boot-2.7.2.jar:2.7.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308) ~[spring-boot-2.7.2.jar:2.7.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) ~[spring-boot-2.7.2.jar:2.7.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) ~[spring-boot-2.7.2.jar:2.7.2]
+	at br.fernando.fernandooperacoes.FernandoOperacoesApplication.main(FernandoOperacoesApplication.java:10) ~[classes/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_332]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_332]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_332]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_332]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.7.2.jar:2.7.2]
+Caused by: org.springframework.amqp.AmqpIllegalStateException: Fatal exception on listener startup
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer.waitForConsumersToStart(SimpleMessageListenerContainer.java:602) ~[spring-rabbit-2.4.6.jar:2.4.6]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer.doStart(SimpleMessageListenerContainer.java:562) ~[spring-rabbit-2.4.6.jar:2.4.6]
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.start(AbstractMessageListenerContainer.java:1405) ~[spring-rabbit-2.4.6.jar:2.4.6]
+	at org.springframework.amqp.rabbit.listener.RabbitListenerEndpointRegistry.startIfNecessary(RabbitListenerEndpointRegistry.java:289) ~[spring-rabbit-2.4.6.jar:2.4.6]
+	at org.springframework.amqp.rabbit.listener.RabbitListenerEndpointRegistry.start(RabbitListenerEndpointRegistry.java:239) ~[spring-rabbit-2.4.6.jar:2.4.6]
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:178) ~[spring-context-5.3.22.jar:5.3.22]
+	... 19 more
+Caused by: org.springframework.amqp.rabbit.listener.QueuesNotAvailableException: Cannot prepare queue for listener. Either the queue doesn't exist or the broker will not allow us to use it.
+	at org.springframework.amqp.rabbit.listener.BlockingQueueConsumer.handleDeclarationException(BlockingQueueConsumer.java:710) ~[spring-rabbit-2.4.6.jar:2.4.6]
+	at org.springframework.amqp.rabbit.listener.BlockingQueueConsumer.passiveDeclarations(BlockingQueueConsumer.java:644) ~[spring-rabbit-2.4.6.jar:2.4.6]
+	at org.springframework.amqp.rabbit.listener.BlockingQueueConsumer.start(BlockingQueueConsumer.java:624) ~[spring-rabbit-2.4.6.jar:2.4.6]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.initialize(SimpleMessageListenerContainer.java:1376) ~[spring-rabbit-2.4.6.jar:2.4.6]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.run(SimpleMessageListenerContainer.java:1221) ~[spring-rabbit-2.4.6.jar:2.4.6]
+	at java.lang.Thread.run(Thread.java:750) ~[?:1.8.0_332]
+Caused by: org.springframework.amqp.rabbit.listener.BlockingQueueConsumer$DeclarationException: Failed to declare queue(s):[{$thanos.fila.autor.queue}]
+	at org.springframework.amqp.rabbit.listener.BlockingQueueConsumer.attemptPassiveDeclarations(BlockingQueueConsumer.java:760) ~[spring-rabbit-2.4.6.jar:2.4.6]
+	at org.springframework.amqp.rabbit.listener.BlockingQueueConsumer.passiveDeclarations(BlockingQueueConsumer.java:637) ~[spring-rabbit-2.4.6.jar:2.4.6]
+	at org.springframework.amqp.rabbit.listener.BlockingQueueConsumer.start(BlockingQueueConsumer.java:624) ~[spring-rabbit-2.4.6.jar:2.4.6]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.initialize(SimpleMessageListenerContainer.java:1376) ~[spring-rabbit-2.4.6.jar:2.4.6]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.run(SimpleMessageListenerContainer.java:1221) ~[spring-rabbit-2.4.6.jar:2.4.6]
+	at java.lang.Thread.run(Thread.java:750) ~[?:1.8.0_332]
+Caused by: java.io.IOException
+	at com.rabbitmq.client.impl.AMQChannel.wrap(AMQChannel.java:129) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.client.impl.AMQChannel.wrap(AMQChannel.java:125) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.client.impl.AMQChannel.exnWrappingRpc(AMQChannel.java:147) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.client.impl.ChannelN.queueDeclarePassive(ChannelN.java:1012) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.client.impl.ChannelN.queueDeclarePassive(ChannelN.java:46) ~[amqp-client-5.14.2.jar:5.14.2]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_332]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_332]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_332]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_332]
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory$CachedChannelInvocationHandler.invoke(CachingConnectionFactory.java:1162) ~[spring-rabbit-2.4.6.jar:2.4.6]
+	at com.sun.proxy.$Proxy132.queueDeclarePassive(Unknown Source) ~[?:?]
+	at org.springframework.amqp.rabbit.listener.BlockingQueueConsumer.attemptPassiveDeclarations(BlockingQueueConsumer.java:738) ~[spring-rabbit-2.4.6.jar:2.4.6]
+	at org.springframework.amqp.rabbit.listener.BlockingQueueConsumer.passiveDeclarations(BlockingQueueConsumer.java:637) ~[spring-rabbit-2.4.6.jar:2.4.6]
+	at org.springframework.amqp.rabbit.listener.BlockingQueueConsumer.start(BlockingQueueConsumer.java:624) ~[spring-rabbit-2.4.6.jar:2.4.6]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.initialize(SimpleMessageListenerContainer.java:1376) ~[spring-rabbit-2.4.6.jar:2.4.6]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.run(SimpleMessageListenerContainer.java:1221) ~[spring-rabbit-2.4.6.jar:2.4.6]
+	at java.lang.Thread.run(Thread.java:750) ~[?:1.8.0_332]
+Caused by: com.rabbitmq.client.ShutdownSignalException: channel error; protocol method: #method<channel.close>(reply-code=404, reply-text=NOT_FOUND - no queue '{$thanos.fila.autor.queue}' in vhost '/', class-id=50, method-id=10)
+	at com.rabbitmq.utility.ValueOrException.getValue(ValueOrException.java:66) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.utility.BlockingValueOrException.uninterruptibleGetValue(BlockingValueOrException.java:36) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.client.impl.AMQChannel$BlockingRpcContinuation.getReply(AMQChannel.java:502) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.client.impl.AMQChannel.privateRpc(AMQChannel.java:293) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.client.impl.AMQChannel.exnWrappingRpc(AMQChannel.java:141) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.client.impl.ChannelN.queueDeclarePassive(ChannelN.java:1012) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.client.impl.ChannelN.queueDeclarePassive(ChannelN.java:46) ~[amqp-client-5.14.2.jar:5.14.2]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_332]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_332]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_332]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_332]
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory$CachedChannelInvocationHandler.invoke(CachingConnectionFactory.java:1162) ~[spring-rabbit-2.4.6.jar:2.4.6]
+	at com.sun.proxy.$Proxy132.queueDeclarePassive(Unknown Source) ~[?:?]
+	at org.springframework.amqp.rabbit.listener.BlockingQueueConsumer.attemptPassiveDeclarations(BlockingQueueConsumer.java:738) ~[spring-rabbit-2.4.6.jar:2.4.6]
+	at org.springframework.amqp.rabbit.listener.BlockingQueueConsumer.passiveDeclarations(BlockingQueueConsumer.java:637) ~[spring-rabbit-2.4.6.jar:2.4.6]
+	at org.springframework.amqp.rabbit.listener.BlockingQueueConsumer.start(BlockingQueueConsumer.java:624) ~[spring-rabbit-2.4.6.jar:2.4.6]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.initialize(SimpleMessageListenerContainer.java:1376) ~[spring-rabbit-2.4.6.jar:2.4.6]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.run(SimpleMessageListenerContainer.java:1221) ~[spring-rabbit-2.4.6.jar:2.4.6]
+	at java.lang.Thread.run(Thread.java:750) ~[?:1.8.0_332]
+Caused by: com.rabbitmq.client.ShutdownSignalException: channel error; protocol method: #method<channel.close>(reply-code=404, reply-text=NOT_FOUND - no queue '{$thanos.fila.autor.queue}' in vhost '/', class-id=50, method-id=10)
+	at com.rabbitmq.client.impl.ChannelN.asyncShutdown(ChannelN.java:517) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.client.impl.ChannelN.processAsync(ChannelN.java:341) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.client.impl.AMQChannel.handleCompleteInboundCommand(AMQChannel.java:182) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.client.impl.AMQChannel.handleFrame(AMQChannel.java:114) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.client.impl.AMQConnection.readFrame(AMQConnection.java:739) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.client.impl.AMQConnection.access$300(AMQConnection.java:47) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.client.impl.AMQConnection$MainLoop.run(AMQConnection.java:666) ~[amqp-client-5.14.2.jar:5.14.2]
+	at java.lang.Thread.run(Thread.java:750) ~[?:1.8.0_332]
