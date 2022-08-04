@@ -1,0 +1,7 @@
+/home/fernando/sdk/workspace/fbj-estudo/Fernando/fernando-operacoes/src/main/java/br/fernando/fernandooperacoes/mapper/AutorTransformMapper.java
+/home/fernando/sdk/workspace/fbj-estudo/Fernando/fernando-operacoes/src/main/java/br/fernando/fernandooperacoes/FernandoOperacoesApplication.java
+/home/fernando/sdk/workspace/fbj-estudo/Fernando/fernando-operacoes/src/main/java/br/fernando/fernandooperacoes/repository/AutorRepository.java
+/home/fernando/sdk/workspace/fbj-estudo/Fernando/fernando-operacoes/src/main/java/br/fernando/fernandooperacoes/service/AutorService.java
+/home/fernando/sdk/workspace/fbj-estudo/Fernando/fernando-operacoes/src/main/java/br/fernando/fernandooperacoes/domain/Autor.java
+/home/fernando/sdk/workspace/fbj-estudo/Fernando/fernando-operacoes/src/main/java/br/fernando/fernandooperacoes/queue/listener/AutorListener.java
+/home/fernando/sdk/workspace/fbj-estudo/Fernando/fernando-operacoes/src/main/java/br/fernando/fernandooperacoes/config/AmqpConfiguration.java
